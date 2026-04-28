@@ -6,9 +6,9 @@ const ThemeToggle = () => {
     const { theme, setTheme } = useTheme();
 
     return (
-        <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-            Toggle {theme === "dark" ? "Light" : "Dark"} Mode
-        </button>
+            <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+                Toggle {theme === "dark" ? "Light" : "Dark"} Mode
+            </button>
     );
 };
 
