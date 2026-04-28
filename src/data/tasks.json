@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Complete homework",
+        "description": "Finish math and science assignments",
+        "status": "pending",
+        "priority": "high",
+        "dueDate": "2026-04-26"
+    },
+    {
+        "id": 2,
+        "title": "Grocery shopping",
+        "description": "Buy vegetables, fruits, and milk",
+        "status": "in-progress",
+        "priority": "medium",
+        "dueDate": "2026-04-25"
+    },
+    {
+        "id": 3,
+        "title": "Workout",
+        "description": "30 minutes of cardio and strength training",
+        "status": "completed",
+        "priority": "low",
+        "dueDate": "2026-04-24"
+    }
+]
