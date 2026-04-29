@@ -6,7 +6,7 @@ export const createATask = async(formData)=> {
  
   const title = formData.get('name')
   const email = formData.get('email')
-  console.log(title, email)
+  console.log(formData)
  
   // Mutate data
   // Revalidate cache
