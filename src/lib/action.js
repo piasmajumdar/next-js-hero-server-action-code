@@ -1,6 +1,7 @@
+"use server"
 import { revalidatePath } from "next/cache";
 import { postTask } from "./tasks";
-
+import { redirect } from "next/navigation";
 
 export const createATask = async (formData) => {
     'use server'
@@ -26,4 +27,15 @@ export const createATask = async (formData) => {
 
     // Mutate data
     // Revalidate cache
+}
+
+export const newTaskAction = async(formData) => {
+    const newTask =  Object.fromEntries(formData.entries());
+    
+    const res = await postTask(newTask);
+    if(res) {
+        revalidatePath('/tasks');
+        redirect('/tasks')
+    }
+    console.log(newTask)
 }
