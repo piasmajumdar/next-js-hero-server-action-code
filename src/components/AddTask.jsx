@@ -32,7 +32,7 @@ export function AddTask({ createATask }) {
                                         <Label>Task Description</Label>
                                         <Input placeholder="Enter your email" />
                                     </TextField>
-                                    <Select name="status" className="w-[256px]" placeholder="Select Status">
+                                    <Select name="status" className="w-[256px]" placeholder="Select Status" isRequired={true}>
                                         <Label>Status</Label>
                                         <Select.Trigger>
                                             <Select.Value />
@@ -55,7 +55,7 @@ export function AddTask({ createATask }) {
                                             </ListBox>
                                         </Select.Popover>
                                     </Select>
-                                    <Select name="priority" className="w-[256px]" placeholder="Select Priority">
+                                    <Select name="priority" className="w-[256px]" placeholder="Select Priority" isRequired={true}>
                                         <Label>Priority</Label>
                                         <Select.Trigger>
                                             <Select.Value />
